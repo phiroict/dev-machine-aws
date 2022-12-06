@@ -8,10 +8,20 @@ Install these tools
 - aws-vault
 - awscli 
 
-## 
+## Prepare
 
+### AWS
 Prepare by setting up the `home` target in aws-vault , you need a key and secret for your account on aws. The account needs to be able to create, alter, and delete vpc and subnets. 
 `aws-vault add home` and follow the instructions 
+
+### SSH keys 
+
+Createa new key by running 
+
+```
+ssh-keygen.exe -t ed25519 -b 521
+```
+note that you can no longer use rsa keys with the latest Amazon Linnux and Ubuntu 22.04 as rsa is phased out. 
 
 ## Run by
 

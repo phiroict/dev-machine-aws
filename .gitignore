@@ -1,5 +1,5 @@
 .terraform/
 *.plan
 *.tfstate*
-id_rsa*
+id_*
 .idea/

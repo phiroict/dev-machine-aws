@@ -11,9 +11,10 @@ packer {
     ami_name      = "dev-machine-linux-aws"
     instance_type = "t2.micro"
     region        = "ap-southeast-2"
-    associate_public_ip_address = true    
-    ssh_private_key_file = "id_rsa"
-    ssh_timeout = "15m"
+
+    associate_public_ip_address = true
+    temporary_key_pair_type = "ed25519"
+    ssh_timeout = "10m"
     source_ami_filter {
       filters = {
         name                = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"
