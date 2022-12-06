@@ -78,5 +78,6 @@ ap-southeast-2: ami-0cd9d05c0067ab3b8
 ## Alternative - AWS image builder
 
 *AWS EC2 image builder*. this is a pipeline building images from recipies and seem to work better than packer.
-In the `infra/builder` we create a pipeline that builds the image pipeline. It has the advantage of a shake and bake 
+In the `infra/builder` we create a pipeline that builds the image pipeline. It has the advantage of a shake and bake solution but may lack the 
+easy customisation. 
 
